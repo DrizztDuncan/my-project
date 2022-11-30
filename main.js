@@ -26,7 +26,7 @@ renderer.render(scene, camera);
 // Torus
 
 const geometry = new THREE.TorusGeometry(14.155, 1.485, 30, 96);
-const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
+const material = new THREE.MeshStandardMaterial({ color: 0xdeb887 });
 const torus = new THREE.Mesh(geometry, material);
 
 scene.add(torus);
@@ -49,7 +49,7 @@ scene.add(pointLight, ambientLight);
 
 function addStar() {
   const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-  const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
+  const material = new THREE.MeshStandardMaterial({ color: 0xfafad2 });
   const star = new THREE.Mesh(geometry, material);
 
   const [x, y, z] = Array(3)
