@@ -37,6 +37,10 @@ blockquote {
   font-style: normal;
 }
 
+.mobile {
+  display: none;
+}
+
 canvas {
   position: fixed;
   top: 0;
@@ -49,6 +53,10 @@ header {
   font-size: 2.5rem;
   padding: 2rem;
   margin-bottom: var(--spacing);
+}
+
+header p {
+  font-size: 1.2rem;
 }
 
 section {
@@ -69,10 +77,10 @@ blockquote {
 
 blockquote p {
   color: black;
-  background-color: white;
+  background-color: rgba(253, 237, 237, 0.8);
   font-size: 4rem;
   display: inline;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .left {
@@ -82,4 +90,51 @@ blockquote p {
 a {
   text-decoration: none;
   color: white;
+}
+
+@media (max-width: 500px) {
+  header,
+  blockquote,
+  section,
+  .left {
+    grid-column: 2 / 11;
+    text-align: center;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+
+  .mobile i {
+    font-size: 2rem;
+  }
+
+  .desk {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2,
+  blockquote p {
+    font-size: 2rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 0.8rem;
+  }
+
+  li {
+    text-align: left;
+  }
 }
