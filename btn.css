@@ -1,0 +1,25 @@
+a {
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 10px 0 11px;
+  margin: 1px;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+a:focus {
+  border-color: rgba(0, 167, 218, 1);
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  outline: 0;
+}
+
+header a {
+  width: 400px;
+}
