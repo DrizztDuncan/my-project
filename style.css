@@ -102,6 +102,7 @@ a {
   .left {
     grid-column: 2 / 11;
     text-align: center;
+    padding: auto;
   }
 
   .mobile {

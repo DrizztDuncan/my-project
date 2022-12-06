@@ -20,6 +20,13 @@ a:focus {
   outline: 0;
 }
 
-header a {
-  width: 400px;
+@media (max-width: 500px) {
+  .mob-header-btn {
+    width: 250px;
+    padding-top: 5px;
+  }
+
+  section a {
+    width: auto;
+  }
 }
