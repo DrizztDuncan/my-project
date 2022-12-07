@@ -16,6 +16,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- <script src="dist/clipboard.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Duncan's Website</title>
@@ -31,19 +34,20 @@
         <h2 class="mobile">To The Moon!!</h2>
         <h2 class="mobile">🙌💎💎🙌</h2>
 
-        <a href="https://github.com/DrizztDuncan" target="_blank" class="contact btn">
+        <a href="https://github.com/DrizztDuncan" target="_blank" class="btn">
           <p class="desk"><i class="fa-brands fa-github"></i> ➩ https://github.com/DrizztDuncan</p>
           <div class="mobile mob-header-btn"><i class="fa-brands fa-github"></i>Github</div>
         </a>
 
-        <a href="https://taiwancodecamp.com/" target="_blank" class="contact btn">
-          <p class="desk"><i class="fa-sharp fa-solid fa-mug-hot"></i> ➩ Hosting Event</p>
-          <div class="mobile mob-header-btn"><i class="fa-sharp fa-solid fa-mug-hot"></i>Event</div>
+        <a href="https://taiwancodecamp.com/" target="_blank" class="btn">
+          <p class="desk"><i class="fa-sharp fa-solid fa-mug-hot "></i> ➩ Hosting Events</p>
+          <div class="mobile mob-header-btn"><i class="fa-sharp fa-solid fa-mug-hot"></i>Events</div>
         </a>
 
-        <a class="btn">
-          <p class="desk"><i class="fa-solid fa-envelope"></i> ➩ duncantheinvictus@gmail.com</p>
-          <div class="mobile"><i class="fa-solid fa-envelope"></i> Email</div>
+        <a class="btn" id="copy-text-btn" >
+          <p class="desk" ><i class="fa-solid fa-envelope"></i> ➩ duncantheinvictus@gmail.com</p>
+          <div class="mobile mob-header-btn"><i class="fa-solid fa-envelope"></i> Email</div>
+          <div style="display: none" id="copy-text">duncantheinvictus@gmail.com</div>
         </a>
         
         
@@ -59,12 +63,12 @@
       <section>
         <h2>👩🏽‍🚀 BIO</h2>
         <p>
-          Front-end developer with 2 years of experience in web development and has UI/UX
-          certification from Taiwan institute for information industry. Enjoy working 
-          closely with team members to ensure workloads are effectively redirected to 
-          bottlenecks and personally picking up the slack when necessary. Passion to 
-          learn and share latest information. Ready to apply my passion for coding to 
-          a talented engineering team to develop quality solutions.
+          Born and live in Taipei with 2 years of self-taught experience in web development 
+          and has UI/UX certification from Taiwan <a href="https://web.iii.org.tw/">Institute for Information Industry</a>. 
+          Enjoy working closely with team members to ensure workloads are effectively
+          redirected to bottlenecks and personally picking up the slack when necessary.
+          Passion to learn and share latest information. Ready to apply my passion for
+          coding to a talented engineering team to develop quality solutions.
         </p>
 
       </section>
@@ -175,7 +179,7 @@
       <section class="right">
         <h2>🏫 Education</h2>
 
-        <h4><a href="https://www.iiiedu.org.tw/" target="_blank">➩ Digital education institude</a></h4>
+        <h4><a href="https://www.iiiedu.org.tw/" target="_blank">➩ Digital Education Institude</a></h4>
         <h5>2018.9 - 2019.2</h5>
         <h5>UI/UX design certification</h5>
         
@@ -196,4 +200,6 @@
 
     <script type="module" src="/main.js"></script>
   </body>
+
+  <script src="copy.js"></script>
 </html>
