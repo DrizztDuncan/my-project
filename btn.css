@@ -22,8 +22,7 @@ a:focus {
 
 @media (max-width: 500px) {
   .mob-header-btn {
-    width: 250px;
-    padding-top: 5px;
+    padding-top: 10px;
   }
 
   section a {
