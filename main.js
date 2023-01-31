@@ -107,12 +107,12 @@ function moveCamera() {
   moon.rotation.y += 0.075;
   moon.rotation.z += 0.05;
 
-  duncan.rotation.y += 0.01;
+  duncan.rotation.y += 0.04;
   duncan.rotation.z += 0.01;
 
-  camera.position.z = t * -0.01;
-  camera.position.x = t * -0.0002;
-  camera.rotation.y = t * -0.0002;
+  camera.position.z = t * -0.02;
+  camera.position.x = t * -0.0005;
+  camera.rotation.y = t * -0.0001;
 }
 
 document.body.onscroll = moveCamera;
