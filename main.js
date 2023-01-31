@@ -108,7 +108,7 @@ function moveCamera() {
   moon.rotation.z += 0.05;
 
   duncan.rotation.y += 0.04;
-  duncan.rotation.z += 0.01;
+  duncan.rotation.z += 0.04;
 
   camera.position.z = t * -0.02;
   camera.position.x = t * -0.0005;
