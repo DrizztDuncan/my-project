@@ -88,7 +88,8 @@ const earth = new THREE.Mesh(
 scene.add(earth);
 
 earth.position.z = 15;
-earth.position.setX(10);
+earth.position.x = 10;
+earth.position.y = 10;
 
 duncan.position.z = -5;
 duncan.position.x = 2;
@@ -101,9 +102,9 @@ function moveCamera() {
   earth.rotation.y += 0.075;
   earth.rotation.z += 0.05;
 
-  // earth.position.x += 3;
-  // earth.position.y += 3;
-  // earth.position.z += 3;
+  earth.position.x += 3;
+  earth.position.y += 3;
+  earth.position.z += 3;
 
   duncan.rotation.y += 0.04;
   duncan.rotation.z += 0.04;
