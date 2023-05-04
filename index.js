@@ -102,10 +102,6 @@ function moveCamera() {
   earth.rotation.y += 0.075;
   earth.rotation.z += 0.05;
 
-  earth.position.x = t * -0.02;
-  earth.position.y = t * -0.02;
-  earth.position.z = t * -0.02;
-
   duncan.rotation.y += 0.04;
   duncan.rotation.z += 0.04;
 
