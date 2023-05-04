@@ -90,7 +90,7 @@ scene.add(moon);
 moon.position.z = 10;
 moon.position.setX(-10);
 
-duncan.position.z = -10;
+duncan.position.z = -5;
 duncan.position.x = 10;
 
 // Scroll Animation
