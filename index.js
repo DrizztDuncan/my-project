@@ -91,7 +91,7 @@ moon.position.z = -20;
 moon.position.setX(-10);
 
 duncan.position.z = 2;
-duncan.position.x = 0;
+duncan.position.x = -5;
 
 // Scroll Animation
 
