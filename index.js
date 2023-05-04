@@ -17,7 +17,7 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(window.innerWidth * 2, window.innerHeight * 2);
+renderer.setSize(window.innerWidth, window.innerHeight);
 camera.position.setZ(50);
 camera.position.setX(-10);
 
