@@ -88,7 +88,7 @@ const earth = new THREE.Mesh(
 scene.add(earth);
 
 earth.position.z = 5;
-earth.position.setX(-10);
+earth.position.setX(-5);
 
 duncan.position.z = -5;
 duncan.position.x = 2;
