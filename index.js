@@ -87,11 +87,11 @@ const moon = new THREE.Mesh(
 
 scene.add(moon);
 
-moon.position.z = 10;
+moon.position.z = -20;
 moon.position.setX(-10);
 
-duncan.position.z = 10;
-duncan.position.x = 10;
+duncan.position.z = 30;
+duncan.position.x = -10;
 
 // Scroll Animation
 
