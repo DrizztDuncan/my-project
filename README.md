@@ -134,3 +134,20 @@ In general, **`addEventListener`** is considered to be the more flexible and pow
 </aside>
 
 ## Transit .onclick into .AddEventListener
+```// Get the copy button element by its ID
+const copyBtn = document.getElementById("copy-text-btn");
+
+// Add an event listener to the copy button that triggers the copyGmail function when clicked
+copyBtn.addEventListener("click", copyGmail);
+
+// The copyGmail function retrieves the email content and copies it to the clipboard
+function copyGmail() {
+  // Get the email content by its ID
+  const copyGmail = document.getElementById("copy-text").innerText;
+
+  // Use the navigator.clipboard API to copy the email content to the clipboard
+  navigator.clipboard.writeText(copyGmail).then(() => {
+    // Display an alert message to the user when the email has been successfully copied
+    alert("Email has been copied!");
+  });
+}```
