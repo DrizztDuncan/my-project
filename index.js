@@ -137,10 +137,27 @@ function animate() {
 animate();
 
 // clipboard
-document.getElementById("copy-text-btn").onclick = function () {
+// Get the copy button element by its ID
+const copyBtn = document.getElementById("copy-text-btn");
+
+// Add an event listener to the copy button that triggers the copyGmail function when clicked
+copyBtn.addEventListener("click", copyGmail);
+
+// The copyGmail function retrieves the email content and copies it to the clipboard
+function copyGmail() {
+  // Get the email content by its ID
+  const copyGmail = document.getElementById("copy-text").innerText;
+
+  // Use the navigator.clipboard API to copy the email content to the clipboard
   navigator.clipboard
-    .writeText(document.getElementById("copy-text").innerText)
-    .then(function () {
+    .writeText(copyGmail)
+    .then(() => {
+      // Display an alert message to the user when the email has been successfully copied
       alert("Email has been copied!");
+      console.log(`${error}`);
+    })
+    .catch((error) => {
+      // Display an error message to the user if the copy operation fails
+      alert(`Failed to copy email: ${error}`);
     });
-};
+}
