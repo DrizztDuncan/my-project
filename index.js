@@ -18,8 +18,8 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
-camera.position.setZ(30);
-camera.position.setX(-3);
+camera.position.setZ(50);
+camera.position.setX(-10);
 
 renderer.render(scene, camera);
 
@@ -38,12 +38,6 @@ pointLight.position.set(5, 5, 5);
 
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight, ambientLight);
-
-//Helpers;
-
-const lightHelper = new THREE.PointLightHelper(pointLight);
-const gridHelper = new THREE.GridHelper(200, 50);
-scene.add(lightHelper, gridHelper);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
@@ -78,23 +72,24 @@ const duncan = new THREE.Mesh(
 
 scene.add(duncan);
 
-// Moon
+// earth
 
-const moonTexture = new THREE.TextureLoader().load("/earth.png");
+const earthTexture = new THREE.TextureLoader().load("/earth.png");
 const normalTexture = new THREE.TextureLoader().load("/normal.jpg");
 
-const moon = new THREE.Mesh(
+const earth = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   new THREE.MeshStandardMaterial({
-    map: moonTexture,
+    map: earthTexture,
     normalMap: normalTexture,
   })
 );
 
-scene.add(moon);
+scene.add(earth);
 
-moon.position.z = 30;
-moon.position.setX(-10);
+earth.position.z = 15;
+earth.position.x = 10;
+earth.position.y = 10;
 
 duncan.position.z = -5;
 duncan.position.x = 2;
@@ -103,9 +98,9 @@ duncan.position.x = 2;
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
-  moon.rotation.x += 0.05;
-  moon.rotation.y += 0.075;
-  moon.rotation.z += 0.05;
+  earth.rotation.x += 0.05;
+  earth.rotation.y += 0.075;
+  earth.rotation.z += 0.05;
 
   duncan.rotation.y += 0.04;
   duncan.rotation.z += 0.04;
@@ -127,7 +122,7 @@ function animate() {
   torus.rotation.y += 0.005;
   torus.rotation.z += 0.01;
 
-  moon.rotation.x += 0.005;
+  earth.rotation.x += 0.005;
 
   // controls.update();
 
