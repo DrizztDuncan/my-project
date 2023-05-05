@@ -149,7 +149,6 @@ function copyGmail() {
     .then(() => {
       // Display an alert message to the user when the email has been successfully copied
       alert("Email has been copied!");
-      console.log(`${error}`);
     })
     .catch((error) => {
       // Display an error message to the user if the copy operation fails
