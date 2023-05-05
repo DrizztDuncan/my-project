@@ -144,14 +144,8 @@ function copyGmail() {
   const copyGmail = document.getElementById("copy-text").innerText;
 
   // Use the navigator.clipboard API to copy the email content to the clipboard
-  navigator.clipboard
-    .writeText(copyGmail)
-    .then(() => {
-      // Display an alert message to the user when the email has been successfully copied
-      alert("Email has been copied!");
-    })
-    .catch((error) => {
-      // Display an error message to the user if the copy operation fails
-      alert(`Failed to copy email: ${error}`);
-    });
+  navigator.clipboard.writeText(copyGmail).then(() => {
+    // Display an alert message to the user when the email has been successfully copied
+    alert("Email has been copied!");
+  });
 }
