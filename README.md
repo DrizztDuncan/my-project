@@ -1,5 +1,3 @@
-# index.js
-
 Welcome to my portfolio site design! My goal with this design is to showcase my skills and projects in a way that feels modern, professional, and engaging. To achieve this, I have drawn inspiration from the endless possibilities of technology and the ever-evolving design trends in the industry.
 
 ## **Design**
