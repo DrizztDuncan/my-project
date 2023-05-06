@@ -80,9 +80,7 @@ function moveCamera() {
 [*Return value*](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect#return_value)
 *The returned value is a `[DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect)` object which is the smallest rectangle which contains the entire element, including its padding and border-width. The `left`, `top`, `right`, `bottom`, `x`, `y`, `width`, and `height` properties describe the position and size of the overall rectangle in pixels. Properties other than `width` and `height` are relative to the top-left of the viewport.*
 > 
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/95c96675-60c4-4b9b-952a-1c25db0d1adc/Untitled.png)
-
+![Untitled](https://user-images.githubusercontent.com/39251171/236612192-91731134-be3e-42e0-864d-25ce564079e1.png)
 ```jsx
 document.body.onscroll = moveCamera;
 moveCamera();
