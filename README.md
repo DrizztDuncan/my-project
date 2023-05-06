@@ -3,8 +3,12 @@ Welcome to my portfolio site design! My goal with this design is to showcase my 
 ## **Design**
 
 The design of this portfolio site is focused on creating a clean and intuitive user interface that highlights my projects and experience. The color scheme is a combination of dark blues and light yellow, which creates a sense of universe throughout the site.
+Layout is designed to be responsive and adaptable, ensuring that the site looks great on any device or screen size.
 
-The layout is designed to be responsive and adaptable, ensuring that the site looks great on any device or screen size.
+## Tech stacks
+
+1. Vite: A local development server written by Evan You and used by default by the Vue project templates. It has support for TypeScript and JSX.
+2. Three.js: A cross-browser JavaScript library and application programming interface used to create and display animated 3D computer graphics in a web browser using WebGL.
 
 ## Three.js
 
